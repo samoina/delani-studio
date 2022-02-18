@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+   background-image: url(/images/h_img.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   text-align: center; 
+ }
+
+.header-section {
+  text-align: center;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 450px;
+ }
+
+ .header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+ }
+
+ .about {
+   text-align: center;
+   margin: 20px;
+   line-height: 2.5;
+ }
+
+ .services {
+  background-image: url(/images/s_image.jpg);
+   background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 50vh;
+  text-align: center;
+  line-height: 2.5;
+  padding: 40px;
+ }
+
+ .what-we-do {
+   margin: 20px;
+ }
+
+ .what-we-do h2 {
+   text-align: center;
+ }
+
+ .service-icons {
+   display: flex;
+   justify-content: space-around;
+ }
+
+ .hidden {
+   width: 300px;
+   text-align: center;
+ }
+
+ .hidden > h4 {
+    font-weight: bold;
+ }
+
+ .hidden-design,
+ .hidden-dev,
+ .hidden-product {
+   display: none;
+ }
+
+ .hidden-effects {
+   text-align: center;
+ }
+
+ .flex-container {
+   display: flex;
+   flex-wrap: wrap-reverse;
+   justify-content: space-evenly;
+ }
+
+ .flex-container img {
+   flex: 1;
+   width: 220px;
+   margin: 20px;
+ }
+
+ /* this is to arrange the first four items on the row */
+ .flex-container :nth-child(1) {
+   order: 4;
+ }
+
+ .flex-container :nth-child(2) {
+  order: 3;
+}
+
+.flex-container :nth-child(3) {
+  order: 2;
+}
+
+.flex-container :nth-child(4) {
+  order: 1;
+}
+
+.contact-us {
+  background-image: url(/images/c_image.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  margin: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+

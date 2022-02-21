@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
 }
 
+/* HEADER */
 
 header {
    background-image: url(/images/h_img.jpg);
@@ -37,6 +38,8 @@ header {
    line-height: 2.5;
  }
 
+ /* SERVICES SECTION */
+
  .services {
   background-image: url(/images/s_image.jpg);
    background-position: center;
@@ -54,6 +57,7 @@ header {
 
  .what-we-do h2 {
    text-align: center;
+   margin-bottom: 20px;
  }
 
  .service-icons {
@@ -80,46 +84,213 @@ header {
    text-align: center;
  }
 
- .flex-container {
-   display: flex;
-   flex-wrap: wrap-reverse;
-   justify-content: space-evenly;
- }
+ /* PORTFOLIO SECTION */
 
- .flex-container img {
-   flex: 1;
-   width: 220px;
-   margin: 20px;
- }
-
- /* this is to arrange the first four items on the row */
- .flex-container :nth-child(1) {
-   order: 4;
- }
-
- .flex-container :nth-child(2) {
-  order: 3;
+ .portfolio-cont {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
 }
 
-.flex-container :nth-child(3) {
+#blackie {
+  order: 1;
+}
+
+#ontario {
   order: 2;
 }
 
-.flex-container :nth-child(4) {
-  order: 1;
+#orange {
+  order: 3;
 }
+
+#carrey {
+  order: 4;
+}
+
+.portfolio-section {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 220px;
+  gap: 20px;  
+  margin: 20px;
+}
+
+#blackie-text,
+#ontario-text,
+#orange-text,
+#carrey-text,
+#elena-text,
+#wordpress-text,
+#burned-text,
+#giraffe-text {
+  color: #000;
+  text-transform: uppercase;
+  background-color: #fff;
+  visibility: hidden;
+  position: relative;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+}
+
+#carrey {
+  background-image: url("/images/portfolio/work1.jpg");
+}
+
+#orange {
+  background-image: url("/images/portfolio/work2.jpg");
+}
+
+#ontario {
+  background-image: url("/images/portfolio/work3.jpg");
+}
+
+
+#blackie {
+  background-image: url("/images/portfolio/work4.jpg"); 
+}
+
+#elena {
+  background-image: url("/images/portfolio/work5.jpg");
+}
+
+#wordpress {
+  background-image: url("/images/portfolio/work6.jpg");
+}
+
+#burned {
+  background-image: url("/images/portfolio/work7.jpg");
+}
+
+#giraffe {
+  background-image: url("/images/portfolio/work8.jpg");
+
+}
+
+#bailey {
+  height: 100%;
+  color: white;
+    /* fallback color */
+    /* background: rgb (0,0,0); */
+    /* black bg color with 0.5 opacity */
+   background: rgba(0,0,0,0.7);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#bailey h2 {
+  border: 5px solid #fff;
+  height: 70%; 
+  width: 90%;
+  font-weight: bolder;
+
+}
+
+/* CONTACT FORM */
 
 .contact-us {
   background-image: url(/images/c_image.jpg);
   background-position: center;
   background-size: cover;
-  height: 80vh;
-  margin: 20px;
+  height: 90vh;
+}
+
+.contact-us h2 {
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 form {
+  opacity: 0.3;
+  padding: 10px 50px 10px 50px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+  padding-bottom: 10px;
+}
+
+.wrapper input {
+  width:100%;
+  padding: 10px;
+}
+
+form textarea {
+  width:100%;
+}
+
+form button {
+  width: 20%;
+  padding: 10px;  
+}
+
+form button:hover {
+  background-color: orange;
+  transition: backgroundcolor 2s ease-out;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 20px 20px 5px 20px;
   text-align: center;
 }
+
+footer .icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 768px) {
+  .services {
+    height: 70vh;
+  }
+
+  .about {
+    line-height: 2.0;
+  }
+
+  .what-we-do {
+  display: none;
+  }
+
+  .contact-us {
+    height: 100vh;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2px;
+  }
+
+  .wrapper input {
+    margin-bottom: 10px;
+  }
+
+  .contact-us h2 {
+    padding-bottom: 10px;
+  }
+
+
+}
+
+
+
+
+
+
+
 
 
 
